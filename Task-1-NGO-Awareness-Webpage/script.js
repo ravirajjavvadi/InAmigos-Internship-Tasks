@@ -118,18 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation();
             navLinks.classList.toggle('active-mobile');
             if (navLinks.classList.contains('active-mobile')) {
-                navLinks.style.display = 'flex';
                 closeLightbox();
-            } else {
-                navLinks.style.display = 'none';
             }
         });
     }
 
     document.addEventListener('click', () => {
-        if (navLinks.classList.contains('active-mobile')) {
+        if (navLinks && navLinks.classList.contains('active-mobile')) {
             navLinks.classList.remove('active-mobile');
-            navLinks.style.display = 'none';
         }
     });
 });

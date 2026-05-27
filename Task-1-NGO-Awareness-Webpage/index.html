@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InAmigos Foundation | Empowering Communities Through Innovation</title>
     <meta name="description" content="InAmigos Foundation is a purpose-driven organization dedicated to uplifting communities through impactful social initiatives, awareness programs, and youth empowerment.">
-    
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="#" class="logo">
-                <span class="logo-accent">In</span>Amigos
+            <a href="#" class="nav-brand">
+                <img src="assets/images/logoinamigo.jpg" alt="InAmigos Foundation Logo" class="nav-logo">
+                <div class="brand-text">
+                    <span class="flag-saffron">In</span><span class="flag-white">Amigos</span> <span class="flag-green">Foundation</span>
+                </div>
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -36,7 +33,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
         <div class="mesh-gradient"></div>
         <div class="container hero-content">
@@ -50,14 +46,13 @@
         </div>
     </header>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container grid">
             <div class="about-text reveal">
                 <span class="section-tag">About InAmigos Foundation</span>
                 <h2>Driven by Purpose. <br>Led by Impact.</h2>
-                <p>Founded on <strong>September 23, 2020</strong>, by <strong>Mr. Govind Shukla (Founder & CEO)</strong>, InAmigos Foundation is a Section 8 registered non-profit organization committed to creating lasting social impact.</p>
-                <p>With its base in Chhattisgarh, the foundation operates across India, addressing critical societal issues through a network of dedicated professionals and volunteers.</p>
+                <p>Founded on <strong>September 23, 2020</strong>, by <strong>Mr. Govind Shukla (Founder & CEO)</strong>, InAmigos Foundation is a Section 8 registered non-profit organization authorized by the Central Government of India.</p>
+                <p>Our foundation operates with a clear vision: to catalyze sustainable social change through technology-driven solutions, community engagement, and transparent operations. With its base in Chhattisgarh, we coordinate a massive network of dedicated professionals and over 30,000 interns nationwide.</p>
                 
                 <div class="founder-card glass-card">
                     <div class="founder-info">
@@ -79,7 +74,35 @@
         </div>
     </section>
 
-    <!-- Credentials Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <div class="mission-grid grid">
+                <div class="mission-visual reveal">
+                    <div class="glass-card mission-card">
+                        <i data-lucide="target" class="mission-icon"></i>
+                        <h3>Our Core Mission</h3>
+                        <p>To empower underprivileged communities by providing access to quality education, healthcare, and sustainable livelihood opportunities through innovative social engineering.</p>
+                    </div>
+                </div>
+                <div class="mission-content reveal">
+                    <span class="section-tag">Directing Our Legacy</span>
+                    <h2>Values That Shape Our Future</h2>
+                    <ul class="values-list">
+                        <li>
+                            <strong>Innovation:</strong> Leveraging modern technology to solve age-old societal challenges.
+                        </li>
+                        <li>
+                            <strong>Integrity:</strong> Maintaining 100% transparency in our Section 8 operations.
+                        </li>
+                        <li>
+                            <strong>Inclusivity:</strong> Ensuring no community is left behind in the digital and social revolution.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="credentials no-padding-top">
         <div class="container">
             <div class="credentials-grid">
@@ -107,7 +130,6 @@
         </div>
     </section>
 
-    <!-- Initiatives Section -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header reveal">
@@ -117,7 +139,6 @@
             </div>
             
             <div class="projects-grid">
-                <!-- Project SEVA -->
                 <div class="project-card reveal">
                     <div class="project-img-box">
                         <div class="project-overlay"></div>
@@ -131,7 +152,6 @@
                     </div>
                 </div>
 
-                <!-- Project BACHPANSHALA -->
                 <div class="project-card reveal">
                     <div class="project-img-box">
                         <div class="project-overlay"></div>
@@ -145,7 +165,6 @@
                     </div>
                 </div>
 
-                <!-- Project JEEVA -->
                 <div class="project-card reveal">
                     <div class="project-img-box">
                         <div class="project-overlay pink"></div>
@@ -159,7 +178,6 @@
                     </div>
                 </div>
 
-                <!-- Project UDAAN -->
                 <div class="project-card reveal">
                     <div class="project-img-box">
                         <div class="project-overlay purple"></div>
@@ -173,7 +191,6 @@
                     </div>
                 </div>
 
-                <!-- Project PRAKRITI -->
                 <div class="project-card reveal">
                     <div class="project-img-box">
                         <div class="project-overlay green"></div>
@@ -187,7 +204,6 @@
                     </div>
                 </div>
 
-                <!-- Project VIKAS -->
                 <div class="project-card reveal">
                     <div class="project-img-box">
                         <div class="project-overlay blue"></div>
@@ -204,18 +220,40 @@
         </div>
     </section>
 
-    <!-- Social Impact Summary -->
     <section id="impact" class="impact">
         <div class="container">
+            <div class="section-header reveal text-center">
+                <span class="section-tag">A Legacy of Change</span>
+                <h2>Creating Real, Measurable Impact</h2>
+                <p class="section-desc">Our metrics aren't just numbers; they represent lives touched, futures secured, and environments restored.</p>
+            </div>
+            
+            <div class="impact-pillars reveal">
+                <div class="pillar-card glass-card">
+                    <i data-lucide="graduation-cap"></i>
+                    <h4>Education</h4>
+                    <p>Training 30,000+ interns in future-ready skills across data, tech, and social sectors.</p>
+                </div>
+                <div class="pillar-card glass-card">
+                    <i data-lucide="heart-pulse"></i>
+                    <h4>Welfare</h4>
+                    <p>Delivering over 50,000+ nutritional meals to those who need them most.</p>
+                </div>
+                <div class="pillar-card glass-card">
+                    <i data-lucide="sprout"></i>
+                    <h4>Ecology</h4>
+                    <p>Restoring natural balance by planting 20,000+ saplings across urban and rural belts.</p>
+                </div>
+            </div>
+
             <div class="impact-content glass-card reveal">
                 <div class="impact-text">
-                    <h2>Creating Real, Measurable Impact</h2>
+                    <h3>Summary of Achievement</h3>
                     <p>At InAmigos Foundation, we believe in the power of collective action. Our transparent operations enable us to bring real change to society.</p>
                     <ul class="impact-list">
-                        <li><i data-lucide="check-circle" class="list-icon"></i> 50,000+ Meals Distributed</li>
-                        <li><i data-lucide="check-circle" class="list-icon"></i> 30,000+ Interns Trained</li>
-                        <li><i data-lucide="check-circle" class="list-icon"></i> 20,000+ Saplings Planted</li>
-                        <li><i data-lucide="check-circle" class="list-icon"></i> 50+ Strays Fed Daily</li>
+                        <li><i data-lucide="check-circle" class="list-icon"></i> National Reach: 28 States & UTs Covered</li>
+                        <li><i data-lucide="check-circle" class="list-icon"></i> 5,000+ Dedicated Professional Volunteers</li>
+                        <li><i data-lucide="check-circle" class="list-icon"></i> IAF ISO 9001:2015 Quality Standards</li>
                     </ul>
                 </div>
                 <div class="impact-stats">
@@ -225,31 +263,40 @@
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">CSR-1</span>
-                        <span class="stat-label">Registered</span>
+                        <span class="stat-label">Government Registered</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
     <section id="join" class="cta">
         <div class="container text-center reveal">
-            <h2>Together, We Can Create a Better Tomorrow</h2>
-            <p>Every contribution matters. Every volunteer creates change. Join InAmigos Foundation and become part of something bigger.</p>
-            <div class="cta-btns">
-                <a href="#" class="btn btn-primary magnetic">Volunteer Now</a>
-                <a href="#" class="btn btn-outline magnetic">Support the Mission</a>
+            <div class="cta-card glass-card">
+                <h2>Join the Professional Revolution for Good</h2>
+                <p>Are you a B.Tech professional, a dedicated student, or a passionate change-maker? InAmigos Foundation offers a platform where your technical skills meet social purpose.</p>
+                <div class="cta-btns">
+                    <a href="#" class="btn btn-primary magnetic">Start Your Internship</a>
+                    <a href="#" class="btn btn-outline magnetic">Official Partnerships</a>
+                </div>
+                <div class="cta-bottom">
+                    <span><i data-lucide="briefcase"></i> 30k+ Successful Internships</span>
+                    <span><i data-lucide="globe"></i> Pan-India Presence</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="#" class="logo"><span class="logo-accent">In</span>Amigos</a>
+                    <a href="#" class="nav-brand">
+                        <img src="assets/images/logoinamigo.jpg" alt="InAmigos Logo" class="nav-logo">
+                        <div class="brand-text">
+                            <span class="flag-saffron">In</span><span class="flag-white">Amigos</span> <span class="flag-green">Foundation</span>
+                        </div>
+                    </a>
                     <p>Empowering Communities Through Awareness & Innovation</p>
                 </div>
                 <div class="footer-social">
@@ -266,6 +313,15 @@
         </div>
     </footer>
 
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Full View">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="script.js"></script>
     <script>
         lucide.createIcons();

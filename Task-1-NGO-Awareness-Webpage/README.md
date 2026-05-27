@@ -10,6 +10,14 @@ A modern, high-fidelity NGO awareness webpage developed as part of the AI Web De
 - **Semantic HTML**: Built with SEO and accessibility best practices in mind.
 
 ## 🛠️ Technologies Used
+- [/] Creative UI & Feature Polish <!-- id: 32 -->
+    - [x] Implement a premium "ChatGPT-style" Lightbox for all images <!-- id: 33 -->
+    - [x] Redesign Carousel shape (Fluid Blob) <!-- id: 34 -->
+    - [x] Enhance image fitting and transitions <!-- id: 35 -->
+- [/] Branding & Navbar Overhaul <!-- id: 36 -->
+    - [/] Master Logo integration (logoinamigo.jpg) <!-- id: 37 -->
+    - [ ] Style branding text with Indian Flag colors <!-- id: 38 -->
+    - [ ] Design a "Powerful" Navbar with glassmorphism and depth <!-- id: 39 -->
 - **HTML5**: Structured with semantic tags.
 - **Vanilla CSS3**: Styled with CSS variables and advanced layout techniques (Flexbox/Grid).
 - **JavaScript (ES6)**: Enhanced with modern APIs for animations and interactions.

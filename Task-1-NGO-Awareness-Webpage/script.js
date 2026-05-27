@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -9,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Reveal on Scroll
     const reveals = document.querySelectorAll('.reveal');
     const revealOptions = {
         threshold: 0.15,
@@ -29,14 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(reveal);
     });
 
-    // Magnetic Buttons
     const magneticBtns = document.querySelectorAll('.magnetic');
     magneticBtns.forEach(btn => {
         btn.addEventListener('mousemove', (e) => {
             const rect = btn.getBoundingClientRect();
             const x = e.clientX - rect.left - rect.width / 2;
             const y = e.clientY - rect.top - rect.height / 2;
-            
             btn.style.transform = `translate(${x * 0.3}px, ${y * 0.5}px)`;
         });
 
@@ -45,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Smooth Scroll for Navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -59,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Oval Carousel Logic
     const slides = document.querySelectorAll('.oval-carousel .slide');
     let currentSlide = 0;
 
@@ -71,10 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (slides.length > 0) {
-        setInterval(nextSlide, 4000); // 4 seconds for a premium feel
+        setInterval(nextSlide, 4000);
     }
 
-    // Hero Mesh Parallax
     const mesh = document.querySelector('.mesh-gradient');
     window.addEventListener('mousemove', (e) => {
         const x = (e.clientX / window.innerWidth) - 0.5;
@@ -84,7 +77,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile Menu Toggle
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.querySelector('.lightbox-close');
+
+    function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxCaption.textContent = alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    document.querySelectorAll('.project-card img, .oval-carousel img').forEach(img => {
+        img.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openLightbox(img.src, img.alt);
+        });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+
     const menuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
     
@@ -94,14 +119,13 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.toggle('active-mobile');
             if (navLinks.classList.contains('active-mobile')) {
                 navLinks.style.display = 'flex';
-                // Styles moved to CSS for better practice
+                closeLightbox();
             } else {
                 navLinks.style.display = 'none';
             }
         });
     }
 
-    // Close mobile menu on click outside
     document.addEventListener('click', () => {
         if (navLinks.classList.contains('active-mobile')) {
             navLinks.classList.remove('active-mobile');

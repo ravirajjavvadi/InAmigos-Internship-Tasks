@@ -1,0 +1,9 @@
+Task 1: NGO Awareness Webpage Submission
+
+- GitHub Repository: https://github.com/ravirajjavvadi/InAmigos-Internship-Tasks
+- Live Netlify Link: [Insert your Netlify Link here]
+
+Submission Checklist:
+1. Upload the 'Task-1-Submission-NGO-Awareness.zip' file to your Google Drive folder.
+2. Upload the screenshots of the Homepage, Initiatives, and Impact sections.
+3. Share the Drive folder link with the NGO team.

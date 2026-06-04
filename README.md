@@ -13,7 +13,7 @@ Welcome to the **Sovereign Portfolio** of my internship at InAmigos Foundation. 
 | **01** | **Resonating for Change** | [Modern Awareness Webpage](./Task-1-NGO-Awareness-Webpage) | HTML5, Vanilla CSS, JS |
 | **02** | **Intelligence in Audit** | [Precision Performance Analysis](./Task-2-Improvement-Analysis) | PDF Audit Engine |
 | **03** | **AI Supremacy** | [EduVerse AI Platform](./task-3-eduverse-ai) | Next.js, Groq Llama-3, Framer |
-| **04** | **Sovereign Strategy** | [Strategic Proposal Gear](./task-4-presentation) | Python, ReportLab, Vector Art |
+| **04** | **Sovereign Strategy** | [Strategic Proposal Gear](./task-4-presentation) | Figma, Strategic UI/UX |
 
 ---
 
@@ -25,7 +25,7 @@ Welcome to the **Sovereign Portfolio** of my internship at InAmigos Foundation. 
 
 > [!TIP]
 > **DESIGN PHILOSOPHY: THE SOVEREIGN GRID**
-> All visual assets in Task 04 were generated via **pure programmatic code**, ensuring infinite scalability and pixel-perfect contrast for NGO evaluators.
+> All visual assets in Task 04 were architected in **Figma**, ensuring pixel-perfect layout, elite typography, and premium branding for NGO evaluators.
 
 ---
 
@@ -34,7 +34,7 @@ Welcome to the **Sovereign Portfolio** of my internship at InAmigos Foundation. 
 - **Core**: HTML5, Vanilla CSS (The Iron Foundation)
 - **Frameworks**: Next.js 15, TailwindCSS, React 19
 - **Inference Engine**: Groq LPUs (Llama-3-70b-8192)
-- **Art/PDF Engineering**: Python 3.12, ReportLab, Canvas Primitives
+- **Aesthetics & Strategy**: Figma, Adobe Suite, Strategic UI/UX Prototyping
 - **Project Tracking**: Git, GitHub, High-Fidelity Markdown Documentation
 
 ---
